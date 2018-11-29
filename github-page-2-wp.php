@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP Github Sync
+Plugin Name: Github Page to WP
 Plugin URI: https://mikecoder.cn
 Description: Yet, just another plugin for wordpress to sync your blog with github.
 Version: 1.0
@@ -38,7 +38,7 @@ add_action('post_submitbox_misc_actions', 'sync_with_github_misc_actions');
 function sync_with_github_misc_actions($post){
 ?>
 <div class="misc-pub-section wp_github_sync">
-<script src="<?php echo plugins_url('wp-github-sync/wp-github-sync.js'); ?>"></script>
+<script src="<?php echo plugins_url('wp-github-sync/github-page-2-wp.js'); ?>"></script>
 <label for="wp_github_url">Sync Github URL:</label><br/>
     <Input id="wp_github_url_txt" name="wp_github_url"/>
     <a id="wp_github_url_btn" onclick="wp_github_sync()" class="button button-primary button-large" value="Sync" name="sync"/>Sync</a>
